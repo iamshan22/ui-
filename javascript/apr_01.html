@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="errorMsg"></p>
+    <div>
+        <label>Email: </label>
+        <input type="email" placeholder="Enter email" id="email" onkeyup="clearValues()" />
+    </div>
+    <div>
+        <label>Password: </label>
+        <input type="password" placeholder="Enter password" id="password" onkeyup="clearValues()" />
+    </div>
+    <button onclick="validateCredentials()">Login</button>
+    <script>
+
+        const user = [
+            {
+                name: 'Karthik',
+                email: 'karthik@gmail.com',
+                password: 'karthik@110',
+                username: 'karthik900'
+            },
+            {
+                name: 'Jagadeesh',
+                email: 'jagadeesh@gmail.com',
+                password: 'jagadeesh@110',
+                username: 'jagadeesh900'
+            },
+            {
+                name: 'Rakesh',
+                email: 'rakesh@gmail.com',
+                password: 'rakesh@110',
+                username: 'rakesh899'
+            },
+        ]
+
+        function validateCredentials() {
+            const enteredEmail = document.getElementById('email').value;
+            const enteredPassword = document.getElementById('password').value;
+
+            if (user.email === enteredEmail && user.password === enteredPassword) {
+                window.location.href = './home.html';
+            } else {
+                document.getElementById('errorMsg').innerHTML = 'Invalid email or password';
+                document.getElementById('errorMsg').style.color = 'red';
+            }
+        }
+
+        function clearValues() {
+            document.getElementById('errorMsg').innerHTML = '';
+        }
+
+
+    </script>
+</body>
+
+</html>

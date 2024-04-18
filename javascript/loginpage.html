@@ -18,11 +18,23 @@
             top: 8px;
             cursor: pointer;
         }
+        .s1{
+            display: grid;
+            grid-area: 1fr;
+            
+            border: 2px solid black;
+            justify-content: center;
+            border-radius: 5px;
+        }
 
     
     </style>
 </head>
 <body>
+   <section class="s1">
+    <div class="in">
+        <p>Invalid email or password</p>
+    </div>
 <div class="v1">
     <label>Email:</label>
     <input type="email" id="email" placeholder="Enter Email">
@@ -36,31 +48,10 @@
   <div class="b1">
     <button class="d1" href="Home.html"></button>
   </div>
+  <i id="dd"></i>
+   </section>
 
     <script>
-        
-
-        console.log(courseName);
-
-        var courseName = 'Mean Stack';
-
-        console.log(courseName);
-
-        courseName = 'DevOps';
-
-        console.log(courseName);
-
-        const batchName = 'FS-Basics-2408';
-
-        // batchName = 'FS-Basics-2409';
-
-        console.log(batchName);
-
-        function displayCourseName() {
-            var courseName = 'MERN Stack';
-
-            console.log(courseName);
-        }
 
         displayCourseName();
         console.log(courseName);
@@ -70,6 +61,11 @@
 
         if (username === dbUsername) {
             console.log('Usernames are matching');
+
+        }
+        else{
+            (username != dbUsername)
+            
         }
 
         var isActive;
@@ -118,12 +114,13 @@
             } else if (users[2].email === enteredEmail && users[2].password === enteredPassword) {
                 filteredUser = users[2];
             }
+            else if (email!=password) {
+                document.getElementById('dd').value;
+            }
 
             if (filteredUser) {
                 console.log(filteredUser);
-            } else {
-                console.log('Invalid email or password');
-            }
+            } 
         }
 
     

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div{
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: lightgreen;
+        width: 300px;
+        height: 200px;
+    }
+    .q1,.q2{
+        margin-left: 10px;
+    }
+    .q1{
+        position: relative;
+        top: 20px;
+    }
+    .q2{
+        position: relative;
+        top: 30px;
+    }
+    .b1{
+        position: relative;
+        top: 50px;
+        left: 100px;
+        background-color: rgb(184, 219, 9);
+
+    }
+    .t1{
+        position: relative;
+        top: 50px;
+        left: 110px;
+        background-color: rgb(235, 214, 214);
+        font-size: medium;
+        width:fit-content;
+    }
+
+</style>
+<body>
+  <div class="div">
+    <div class="q1">
+        <label>Number 1:</label>
+        <input type="text" placeholder="number 1" id="number1">
+    </div>
+    <div class="q2">
+        <label>Number 2:</label>
+        <input type="text" placeholder="number2" id="number2">
+    </div>
+    <button class="b1" onclick="sum()"> Calculate</button>
+    <p class="t1" id="result"></p>
+  </div>
+  
+    <script>
+        function sum(){
+            var num1= document.getElementById('number1').value;
+            var num2= document.getElementById('number2').value;
+            document.getElementById('result').innerHTML= Number(num1)+Number(num2);
+        }
+
+    </script>
+    
+</body>
+</html>
