@@ -1,0 +1,89 @@
+body{
+    background-color: blanchedalmond;
+}
+.c1,.c2,.c3,.c4,.f1
+{
+    display: flex;
+    padding: 10px;
+}
+.w1{
+    align-items: center;
+} 
+#f1{
+    align-items: center;
+    position: relative;
+    left: 110px;
+    padding: 10px;
+}
+#b1{
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+#b2{
+    margin-left:20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#name{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 20px;
+}
+#Leadstatus{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 20px;
+} #cc{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 20px;
+} #phone{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 20px;
+} #LS{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 20px;
+}  
+#Tech{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+      margin-left: 20px;
+}#email{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+      margin-left: 20px;
+}#course{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 20px;
+}
+form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        margin-left: 200px;
+        position: relative;
+        top: 250px;
+        left: 300px;
+    }
