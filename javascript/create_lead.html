@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .c1,.c2
+    {
+        display: flex;
+        padding: 10px;
+    }
+    /* .w1 div{
+        padding: 10px;
+        float: left;
+    } */
+    #name{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-left: 20px;
+    }
+    #Leadstatus{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-left: 20px;
+    } #cc{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-left: 20px;
+    } #phone{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-left: 20px;
+    } #LS{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-left: 20px;
+    }  
+    #Tech{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+          margin-left: 20px;
+    }#email{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+          margin-left: 20px;
+    }
+    form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin-left: 200px;
+        }
+</style>
+<body>
+    <div class="w1">
+       <form action="create_lead.html" method="post">
+        <h2>Create Lead</h2>
+           <div class="c1">
+             <input id="name" type="text" placeholder="Name">
+             <select  name="Lead Status " id="Leadstatus">
+                <option value=""> Lead Status</option>
+                <option value=""></option>
+                <option value=""></option>
+               </select>
+        </div>
+        <div class="c2">
+            <input id="cc" type="text" placeholder="CC">
+            <input id="LS" type="text" placeholder="Lead Source">
+        </div>
+        <div class=" c3">
+            <input type="number" id="phone" placeholder="phone">
+            <select  name="" id="Tech">
+                <option value=""> Tech stack</option>
+                <option value=""></option>
+                <option value=""></option>
+               </select>
+         </div>
+         <div class="c4">
+            <input type="email" name="" id="email">
+            <select  name="" id="course">
+                <option value=""> Course</option>
+                <option value=""></option>
+                <option value=""></option>
+               </select>
+
+         </div>
+        
+       </form>
+    </div>
+</body>
+</html>

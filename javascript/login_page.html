@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        .d1 h1{
+            color: lightskyblue;
+            font-style: italic;
+        }
+        header{
+            border-bottom: 2px solid blue;
+            position :sticky;
+            top: 0px;
+        }
+        
+        .f1 img {
+            margin-bottom: 100px;
+            width: 400px;
+        }
+        .f1{
+             position: relative;
+             left: 480px;
+             top: 50px;
+        }
+        .d1 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            float: left;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin-left: 200px;
+            height: 50vh;
+        }
+        img{
+            width: 150px;
+        }
+
+        #username ,#password {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px ;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #hello {
+            width: 30%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            left: 130px;
+        }
+
+        #hello :hover {
+            background-color: #0056b3;
+        }
+        #Forgot_password{
+            position: relative;
+            top: 50px;
+            right: 20px;
+            padding: 40px;
+        }
+        #new_account{
+            position: relative;
+            top: 200px;
+            right: 300px;
+            color: darkmagenta;
+        }
+        #new_account :hover{
+            color: rgb(0, 0, 0);
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+  <header>
+    <h1><img src="https://3ro8b0zdvxfbk7jy.public.blob.vercel-storage.com/digitallync-kAEA3lzPbRRxSQqzjNHBfAc8mttg51.png" alt=""></h1>
+  </header>
+<section class="s1">
+   
+    <div class="d1">
+      
+        <form action="create_lead.html" method="POST">
+            <h1>Login</h1>
+            <input id="username" type="text" name="username" placeholder="Username" required>
+            <input id="password" type="password" name="password" placeholder="Password" required>
+            <button id="hello">Login</button>
+            <br>
+            <br>
+            <input type="checkbox" ><small><em>Remember me</em> </small>
+            <a id="Forgot_password" href="forgot_password.html">Forgot_password</a> 
+
+        </form>
+        <a id="new_account" href="create_lead.html"><small><span> Don't have an account?</span></small></a>
+        <div class="f1">
+            <img src="./kkoko.png" alt="">
+        </div>
+    </div>
+</section>
+</body>
+</html>
