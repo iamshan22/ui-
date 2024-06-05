@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>LOGIN</h2>
+    </div>
+    <div>
+        <Label for="mobileNo" >Mobile No</Label>
+        <input type="text" placeholder="Enter mobile No" id="mobileNo">
+    </div>
+    <button type="button" onclick="sendOtp"> Send otp</button>
+    <script>
+    var registeredUsers =[
+        {
+            name:'shankar',
+            mobileNo:1234567899
+        },
+        {
+            name:'raknahs',
+            mobileNo:123456789
+        }
+    ];
+
+    function sendOtp(){
+        console.log('inside send otp function');
+    }
+    </script>
+    
+</body>
+</html>

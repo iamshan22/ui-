@@ -24,6 +24,9 @@ body{
     cursor: pointer;
     
 }
+h2{
+    color: lightskyblue;
+}
 #b2{
     margin-left:20px;
     background-color: #007bff;
@@ -33,44 +36,7 @@ body{
     border-radius: 4px;
     cursor: pointer;
 }
-#name{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin-left: 20px;
-}
-#Leadstatus{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin-left: 20px;
-} #cc{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin-left: 20px;
-} #phone{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin-left: 20px;
-} #LS{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin-left: 20px;
-}  
-#Tech{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-      margin-left: 20px;
-}#email{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-      margin-left: 20px;
-}#course{
+#email,#Tech,#name,#Leadstatus,#cc,#phone,#course,#LS{
     border-top: none;
     border-left: none;
     border-right: none;
