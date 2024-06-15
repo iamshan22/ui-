@@ -10,10 +10,10 @@
         <h2>LOGIN</h2>
     </div>
     <div>
-        <Label for="mobileNo" >Mobile No</Label>
+        <Label for="mobileNo">Mobile No</Label>
         <input type="text" placeholder="Enter mobile No" id="mobileNo">
     </div>
-    <button type="button" onclick="sendOtp"> Send otp</button>
+    <button onclick="sendOtp()"> Send otp</button>
     <script>
     var registeredUsers =[
         {
@@ -26,8 +26,9 @@
         }
     ];
 
-    function sendOtp(){
-        console.log('inside send otp function');
+    function sendOtp() {
+        var entredMobileNo = +document.getElementById('mobileNo').value;
+        console.log(entredMobileNo);
     }
     </script>
     

@@ -5,7 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #errorMsg{
+        color: red;
+        margin: 0px;
+    }
+</style>
 <body>
-    <h1>Hello</h1>
+    <div>
+        <label for="emailOrMobileNo">email or mobile </label>
+        <input type="text"placeholder='Enter email or mobile' id="emailOrMobileNo">
+        <p id="errorMsg"></p>
+    </div>
+    <button onclick="validateEmailOrMobileNo()">Continue</button>
+    <script>
+        var registeredUsers = [
+            {
+                email: 'shankar1@gmail.com',
+                mobile:12345678,
+                otp:3321
+            },
+            {
+                email: 'shankar2@gmail.com',
+                mobile:1234567899,
+                otp:3322
+            },
+            {
+                email: 'shankar@gmail.com',
+                mobile:123456788999,
+                otp:3323
+            }
+        ];
+
+        function validateEmailOrMobileNo() {
+            var emailOrMobileNo = document.getElementById('emailOrMobileNo').value;
+            if(emailOrMobileNo.length > 0){
+                if(emailOrMobileNo === registeredUsers[0].email||+emailOrMobileNo === +registeredUsers[0].mobile){
+                    window.location.href='Home.html';
+                }
+                else if (emailOrMobileNo === registeredUsers[1].email||+emailOrMobileNo === +registeredUsers[1].mobile){
+                    window.location.href='Home.html';
+                } else{
+                    document.getElementById('errorMsg').innerHTML='incorrect check again '
+                }
+            } else {
+                document.getElementById('errorMsg').innerHTML='Enter your email or mobile phone neumber';
+            }
+        }
+    </script>
 </body>
 </html>
