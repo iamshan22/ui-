@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: rgb(39, 10, 28);
+        box-shadow: 0px 0px 10px black;
+        padding: 10px;
+        justify-content: last baseline;
+        text-align: center;
+        color: aliceblue;
+        text-decoration: underline;
+    }
+    .div{
+        box-shadow: 0px 0px 10px black;
+        margin-left: 500px;
+        margin-top: 100px;
+        height: 60vh;
+        width:400px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: rgb(39, 10, 28);
+        align-content: center;
+        
+    }
+    #j1{
+        color: aliceblue;
+        width:calc(100%-20px);
+        margin: 10px;
+        padding: 10px;
+        border: 1px seashell;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 5px;
+        box-sizing: border-box ;
+        margin-left: 100px;
+
+    }
+    button{
+        width: 20%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px;
+    margin-left: 150px;
+    margin-top: 40px;
+    color: antiquewhite;
+    }
+    button:hover{
+        background-color: black;
+    }
+</style>
+<body>
+    <section class="w1">
+        <header>
+            <h1><big>Registation page</big></h1>
+        </header>
+        <div class="div">
+           <div id="j1">
+            <label for="name"><small>NAME</small></label><br>
+            <input type="text" name="name" id="name">
+           </div>
+           <div id="j1">
+            <label for="email"><small>EMAIL</small></label> <br>
+            <input type="email" name="email" id="email">
+           </div>
+           <div id="j1">
+            <label for="password"><small>PASSWORD</small></label> <br>
+            <input type="password" name="password" id="password">
+           </div>
+           <div id="j1">
+            <label for="confirmpassword"><small>CONFIRM PASSWORD</small></label> <br>
+            <input type="password" name="confirmpassword" id="CONFIRM">
+           </div>
+           <div id="j1">
+            <label for="role"><small>ROLE</small></label>
+            <select name="role" id="role">
+                <option value="">select</option>
+                <option value="">Adimn</option>
+                <option value="">user</option>
+
+            </select>
+           </div>
+           <div id="j1">
+            <label for="status"><small>STATUS</small></label>
+            <select name="status" id="STATUS">
+                <option value="">select</option>
+                <option value="">ACTIVE</option>
+                <option value="">IN ACTIVE</option>
+
+            </select>
+           </div>
+           <button>submit</button>
+
+        </div>
+    </section>
+    
+</body>
+</html>

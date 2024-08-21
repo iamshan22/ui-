@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .h1{
+        position: relative;
+        left: 700px;
+        top: 100px;
+    }
+    #outer-block{
+        width: 150px;
+        border: 2px solid black;
+    }
+    .inner-block{
+        border: 2px solid black;
+        padding: 65px;
+        border-radius: 50%;
+        margin: 8px;
+    }
+    #dropdown-container{
+        margin: 10px 0px;
+        
+    }
+    /* button{
+        background-color: chocolate;
+        padding: 65px;
+        border-radius: 50%;
+        border: none;
+    } */
+     #boo{
+        background-color: skyblue;
+     }
+     #red{
+        background-color: red;
+     }
+     #orange{
+        background-color: orange;
+     }
+     #green{
+        background-color: green;
+     }
+     
+</style>
+<body>
+    <section class="h1">
+        <div id="outer-block">
+            <div class="inner-block" id="red">
+    
+            </div>
+            <div class="inner-block" id="orange">
+                
+            </div>
+            <div class="inner-block" id="green">
+                
+            </div>
+        </div>
+        <div id="dropdown-container">
+          <select onchange="onchangecolor()" id="color">
+            <option id="boo" >select</option>
+            <option value="red" id="red">red</option>
+            <option value="orange" id="orange" >orange</option>
+            <option value="green" id="green">green</option>
+          </select>
+        </div>
+    </section>
+    <script>
+        function onchangecolor(){
+            var color = document.getElementById('color').value;
+            if(color=== 'red'){
+                document.getElementById('red')
+            }else if (color==='orange'){
+                document.getElementById('orange')
+            }else if(color==='green'){
+                document.getElementById('green ')
+            }else{
+                
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

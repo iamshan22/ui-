@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER LOGIN</title>
+</head>
+<style>
+    body{
+        background-color:whitesmoke;
+    }
+    .s1{
+        box-shadow: 0px 0px 10px black;
+        margin-left: 500px;
+        margin-top: 200px;
+        height: 30vh;
+        width:400px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: rgb(111, 188, 243);
+        align-content: center;
+}
+#username ,#password{
+    width:calc(100%-20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px seashell;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    box-sizing: border-box ;
+    margin-left: 100px;
+}
+button{
+    width: 30%;
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px;
+    margin-left: 111px;
+    margin-top: 20px;
+
+}
+header{
+    border: 1PX solid rgb(255, 255, 255);
+    box-shadow: 0PX 0PX 10px black;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+h1{
+    text-decoration: aqua;
+    font-style: italic;
+    margin-left: 600px;
+}
+
+</style>
+<body>
+    <header><BIg><h1>LOGIN PAGE</h1></BIg>
+    <nav>
+        
+    </nav>
+    </header>
+  <section class="s1">
+        <div class="E1">
+            <label for="">USERNAME</label>
+            <input type="text" placeholder="Enter USERNAME" id="username">
+          </div>
+         <div class="E2">
+          <label for="">PASSWORD</label>
+          <input type="password" placeholder="Enter PASSWORD" id="password">   
+         </div>
+         <button type="submit" onclick="validateusers()">LOGIN</button>
+  </section>
+  <p id="errorMessage"></p>
+  <script>
+    function validateUsers(){
+
+
+
+
+
+
+
+        
+        const enteredUserName= document.getElementById('username').value;
+        const enteredPassword=document.getElementById('password').vale;
+
+    }
+
+  </script>
+    
+</body>
+</html>
