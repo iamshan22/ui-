@@ -138,9 +138,13 @@ body{
 .register-link p a:hover{
     text-decoration: underline;
 }
-p{
+.input-box p{
     margin: 0px;
-    color: red;
+    color: rgb(255, 3, 3);
+}
+#successful{
+    margin-left: 100px;
+    color: green;
 }
 </style>
 </head>
@@ -150,18 +154,30 @@ p{
         <form action="">
 
             <h1>Login</h1>
-
             <div class="input-box">
                 <input type="text" id="email" placeholder="Email" required>
-                <p id="emailMsg"></p>
                 <i class='bx bxs-user'></i>
+                <p id="emailMsg"></p>
+            </div>
+            
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt' ></i>
+                <p id="passwordMsg"></p>
+            </div>
+            
+
+            <!-- <div class="input-box">
+                <input type="text" id="email" placeholder="Email" required>
+                <i class='bx bxs-user'></i>
+                <p id="emailMsg"></p>
             </div>
 
             <div class="input-box">
                 <input type="password" placeholder="Password" required>
-                <p id="passwordMsg"></p>
                 <i class='bx bxs-lock-alt' ></i>
-            </div>
+                <p id="passwordMsg"></p>
+            </div> -->
 
             <div class="remember-forget">
                 <label><input type="checkbox">Remember me</label>
@@ -174,6 +190,7 @@ p{
                 <p>Don't have an account? <br>
                 <a href="#">Register</a></p>
             </div>
+            <div id="successful"></div>
 
         </form>
 
@@ -204,35 +221,49 @@ p{
                 name:'shankar',
                 email: 'shankar1@gmail.com',
                 mobile:12345678,
-                otp:3321
+                password:3321
             },
             {
                 id:2,
                 name:'onkar',
                 email: 'onkar2@gmail.com',
                 mobile:1234567899,
-                otp:3322
+                password:3322
             },
             {
                 id:3,
                 name:'shan',
                 email: 'shanr@gmail.com',
                 mobile:123456788999,
-                otp:3323
+                password:3323
             }
         ];
-        function validateUsers(){
-            var email=document.getElementById('email').value;
-            var password =document.getElementById('password').value;
+        function validateUsers() {
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
 
-            if (email.length===0){
-                document.getElementById('emailMsg').innerHTML='email is required';
-            }else if(password.length===0){
-                document.getElementById('passwordMsg').innerHTML='password is required';
-            }else{
+    // Clear previous messages
+    document.getElementById('emailMsg').innerHTML = '';
+    document.getElementById('passwordMsg').innerHTML = '';
 
-            }
+    if (email.length === 0) {
+        document.getElementById('emailMsg').innerHTML = 'Email is required';
+    } else if (password.length === 0) {
+        document.getElementById('passwordMsg').innerHTML = 'Password is required';
+    } else {
+        var user = Users.find(user => user.email === email);
+        if (!user) {
+            document.getElementById('emailMsg').innerHTML = 'Email not found';
+        } else if (user.password != password) {
+            document.getElementById('passwordMsg').innerHTML = 'Incorrect password';
+        } else {
+            document.getElementById('successful').innerHTML = 'Login successful!';
+            document.getElementById('passwordMsg').innerHTML = '';
         }
+    }
+}
+
+
         
     </script>
 
@@ -241,3 +272,46 @@ p{
     
 </body>
 </html>
+
+
+
+<!-- function validateUsers(){
+    var email=document.getElementById('email').value;
+    var password =document.getElementById('password').value;
+
+    if (email.length===0){
+        document.getElementById('emailMsg').innerHTML='email is required';
+    }else if(password.length===0){
+        document.getElementById('passwordMsg').innerHTML='password is required';
+    }else{
+
+    }
+} -->
+
+
+
+
+<!-- //  function validateUsers() {
+    //     // Clear previous messages
+    //     document.getElementById('emailMsg').innerHTML = '';
+    //       document.getElementById('passwordMsg').innerHTML = '';
+
+    //         if (email.length === 0) {
+    //         document.getElementById('emailMsg').innerHTML = 'Email is required';
+    //            } else if (password.length === 0) {
+    //         document.getElementById('passwordMsg').innerHTML = 'Password is required';
+    //      } else {
+    //        var user = Users.find(user => user.email === email);
+    //      if (!user) {
+    //      document.getElementById('emailMsg').innerHTML = 'Email not found';
+    //      } else if (user.password != password) {  // Assuming OTP is used as a password
+    //      document.getElementById('passwordMsg').innerHTML = 'Incorrect password';
+    //      } else {
+    //      document.getElementById('emailMsg').innerHTML = 'Login successful!';
+    //      document.getElementById('passwordMsg').innerHTML = '';
+    //       }
+    //     }
+    //  } -->
+
+
+    

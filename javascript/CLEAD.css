@@ -1,5 +1,6 @@
 body{
-    background-color: blanchedalmond;
+    background-image: url(./Gta\ Online\ Los\ Santos\ Wallpaper\ For\ Tech.jpg) ;
+
 }
 .c1,.c2,.c3,.c4,.f1
 {
@@ -43,10 +44,13 @@ h2{
     margin-left: 20px;
 }
 form {
-        background-color: #fff;
+        background-color:transparent;
         padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(6px);
+         box-shadow: 0 0 10px rgba(255, 255, 255, .2);   
+         border-radius: 10px;
         width: 400px;
         margin-left: 200px;
         position: relative;
